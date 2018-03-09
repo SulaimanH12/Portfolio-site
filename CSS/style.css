@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: "Source Sans Pro", Arial, sans-serif, Helvetica;
+  color: #fff;
+  background-color: #fff;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  opacity: 0.75;
+  background: url(../images/img3.jpg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  letter-spacing: 1.3px;
+}
+
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.brand-heading {
+  font-size: 40px;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: white;
+  font-family: "Source Sans Pro", "Raleway", sans-serif, Arial;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+ }
+ 
+  .intro .intro-body .brand-heading {
+    font-size: 5.75rem;
+ }
+ 
+  .intro .intro-body .intro-text {
+    font-size: 2.5rem;
+ }
+ 
+}
+
+#main-info {
+	margin-top: -8%;
+}
+
+.navbar-custom {
+  background-color: black;
+  border-color: transparent;
+}
+
+.navbar-custom {
+  color: #6bf;
+  font-family: "Source Sans Pro", Arial, sans-serif, cursive;
+}
+
+.navbar-custom .navbar-collapse {
+  border: 1px solid transparent;
+}
+
+.navbar-custom .navbar-toggle {
+  background-color: transparent;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #dcdcdc;
+  font-size: 15px;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  color: #dcdcdc;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li a {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #bebebe;
+  font-size: 1.75rem;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  color: #4DB0FF;
+  outline: none;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #fff;
+  background-color: #6bf;
+}
+
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: black;
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+/* .navbar-custom .nav li a {} to target font size on navbar */
+/* .intro or #home to target main page, needs to be resized for devices */
+/* span .scroll-btn for learn more button, needs to be resized for devices */
+/* .divider-box-contact needs to be adjusted for devices for both about section and contact */
+/* img in about needs to be resized. */
