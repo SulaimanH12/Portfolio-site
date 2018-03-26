@@ -70,7 +70,6 @@ gulp.task('js', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
-        .pipe(uglify_es6())
         .pipe(concat('app.min.js'))
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write())
