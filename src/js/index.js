@@ -18,7 +18,7 @@ openMobileMenu = () => {
         // // Add transform styling
         // navigationStyle.transform = 'translateX(0)';
 
-        console.log('click!!!!!');
+        console.log('click!!!!!!');
     };
 };
 
