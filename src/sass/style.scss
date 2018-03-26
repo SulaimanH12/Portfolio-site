@@ -2,7 +2,7 @@
 
 // Mobile Nav
 .nav-top {
-    display: none;
+    display: none; // Desktop and tablet nav menu set to not display until media queries
 }
 
 nav.mobile-menu, 
@@ -71,7 +71,7 @@ nav.mobile-menu {
     background: url(../img/landing.jpg);
     height: 85vh;
     background-position-y: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); // Skew effect
 }
 
 .landing-text-container {
@@ -89,6 +89,9 @@ nav.mobile-menu {
     a {
         color: inherit;
     }
+    &:last-child {
+        padding-bottom: 1.7em;
+    }
 }
 
 .title {
@@ -99,11 +102,26 @@ nav.mobile-menu {
     font-weight: 400;
     width: 50%;
     margin: 0 auto;
-    padding: 3px 30px;
+    padding: 5px 30px;
 }
 
 .text-container {
     padding: 0 25px;
+}
+
+// Portfolio 
+#portfolio {
+    background-color: #d6d6d6;
+    box-shadow: 2px 2px 3px 3px #d6d6d6;
+}
+
+.portfolio-title-container {
+    padding: 15px 30px;
+    width: 50%;
+    margin: 0 auto;
+    h2 {
+        font-weight: 400;
+    }
 }
 
 // Media query for mobile nav to change
