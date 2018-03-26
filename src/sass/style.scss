@@ -67,16 +67,26 @@ nav.mobile-menu {
 .landing  {
     text-align: center;
     color: white;
+    background: url(../img/landing.jpg);
+    height: 100vh;
+    background-position-y: 50%;
 }
 
 .landing-text-container {
-    font-weight: 400;
+    padding: 8em 0;
+    h1, h2  {
+        font-weight: 400;
+        font-size: 33px;
+    }
 }
 
 // About
 .about-text {
     font-size: 18px;
     line-height: 1.7;
+    a {
+        color: inherit;
+    }
 }
 
 .title {
@@ -101,5 +111,8 @@ nav.mobile-menu {
     }
     .nav-top {
         display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
