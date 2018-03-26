@@ -1,0 +1,23 @@
+@import "global.scss";
+
+.landing  {
+    text-align: center;
+}
+
+// About
+.about-text {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.title {
+    padding: 7px 0;
+}
+
+.section-heading {
+    font-weight: 400;
+}
+
+.section-heading, .text-container {
+    padding: 0 20px;
+}
