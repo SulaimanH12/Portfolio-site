@@ -19,6 +19,7 @@ span.mobile-menu-toggle {
     position: absolute;
     right: 5%;
     top: 3%;
+    z-index: 1;
 }
 nav.mobile-menu {
     position: fixed;
@@ -68,8 +69,9 @@ nav.mobile-menu {
     text-align: center;
     color: white;
     background: url(../img/landing.jpg);
-    height: 100vh;
+    height: 85vh;
     background-position-y: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .landing-text-container {

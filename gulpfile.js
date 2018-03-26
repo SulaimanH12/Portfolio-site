@@ -100,7 +100,7 @@ gulp.task('watch', function() {
     gulp.watch(src.js, ['js']);
     gulp.watch(src.sass, ['sass']);
     gulp.watch(src.img, ['img']);
-    gulp.watch(index.html).on('change', browserSync.reload);
+    gulp.watch('index.html').on('change', browserSync.reload);
 });
 
 // ----------------------------------------------------

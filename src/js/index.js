@@ -1,38 +1,25 @@
-$(function () {
-    // Mobile Menu
-    $(".mobile-menu-toggle").on('click', function () {
-        $("nav.mobile-menu")
-            .addClass("open")
-            .css("transform", "translateX(0)");
+/*jshint esversion: 6*/
 
-    });
+openMobileMenu = () => {
+    // .mobile-menu-toggle
+    let mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
 
-    // Click off Mobile Menu
-    $(".close-mobile-menu").on('click', function () {
-        $("nav.mobile-menu")
-            .removeClass("open")
-            .css("transform", "translateX(100%)");
-    });
+    // nav.mobile-menu
+    let navigation = document.getElementsByClassName("mobile-menu");
 
+    // accessing CSS for nav.mobile-menu
+    let navigationStyle = navigation.style;
 
-    // Scroll to  target given anchor with an id
-    $("a[href^=\\#]").on('click', function (e) {
+    mobileMenuToggle.onclick = () => {
 
-        // prevents native anchor behavior
-        e.preventDefault();
+        // // Add class
+        // navigation.className = 'open';
 
-        // store destination
-        var dest = $(this).attr('href');
+        // // Add transform styling
+        // navigationStyle.transform = 'translateX(0)';
 
-        // close mobile menu
-        $("nav.mobile-menu")
-            .removeClass("open")
-            .css("transform", "translateX(100%)");
+        console.log('click!!!!!');
+    };
+};
 
-
-        // animate towards the dest via 2ms
-        $('html, body').animate({
-            scrollTop: $(dest).offset().top
-        }, 2000);
-    }); 
-});
+openMobileMenu();
