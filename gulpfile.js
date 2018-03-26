@@ -6,6 +6,7 @@ var gulp = require("gulp"),
     plumber = require("gulp-plumber"),
     minify_css = require("gulp-clean-css"),
     uglify = require("gulp-uglify"),
+    uglify_es6 = require("uglify-es"),
     sourcemaps = require("gulp-sourcemaps"),
     imagemin = require("gulp-imagemin"),
     notify = require("gulp-notify"),
@@ -70,6 +71,7 @@ gulp.task('js', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
+        .pipe(uglify_es6())
         .pipe(concat('app.min.js'))
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write())

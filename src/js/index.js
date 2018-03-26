@@ -2,13 +2,13 @@
 
 openMobileMenu = () => {
     // .mobile-menu-toggle
-    let mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
+    var mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
 
     // nav.mobile-menu
-    let navigation = document.getElementsByClassName("mobile-menu");
+    var navigation = document.getElementsByClassName("mobile-menu");
 
     // accessing CSS for nav.mobile-menu
-    let navigationStyle = navigation.style;
+    var navigationStyle = navigation.style;
 
     mobileMenuToggle.onclick = () => {
 
