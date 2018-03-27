@@ -111,8 +111,8 @@ nav.mobile-menu {
 
 // Portfolio 
 #portfolio {
-    background-color: #d6d6d6;
-    box-shadow: 2px 2px 3px 3px #d6d6d6;
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 3px 3px #f6f6f6;
 }
 
 .portfolio-title-container {
@@ -122,6 +122,15 @@ nav.mobile-menu {
     h2 {
         font-weight: 400;
     }
+}
+
+.case-study-container {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.holder {
+    padding-bottom: 1.5em;
 }
 
 // Media query for mobile nav to change
