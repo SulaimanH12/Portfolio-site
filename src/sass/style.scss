@@ -133,6 +133,63 @@ nav.mobile-menu {
     padding-bottom: 1.5em;
 }
 
+// Footer 
+.contact-title-container {
+    padding: 15px 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-weight: 400;
+}
+
+.find-out {
+    display: none;
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 1em 1em 1em;
+    li:nth-child(3), li:nth-child(4) {
+        text-align: center;
+        margin-top: 7px;
+    }
+}
+
+.twitter-icon {
+    width: 75%;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.behance-icon {
+    width: 75%;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.linkedin-icon {
+    width: 50%;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.github-icon {
+    width: 50%;
+    &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    }
+}
+
 // Media query for mobile nav to change
 @media screen and (min-width: 700px) {
     nav.mobile-menu, 
@@ -144,5 +201,11 @@ nav.mobile-menu {
         position: absolute;
         top: 0;
         right: 0;
+    }
+}
+
+@media screen and (min-width: 525px){
+    .find-out {
+        display: block;
     }
 }
