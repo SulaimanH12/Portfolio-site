@@ -1,22 +1,20 @@
-/*jshint esversion: 6*/
-
-openMobileMenu = () => {
+var openMobileMenu = function () {
     // .mobile-menu-toggle
-    let mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
+    var mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
 
     // nav.mobile-menu
-    let navigation = document.getElementsByClassName("mobile-menu");
+    var navigation = document.getElementsByClassName("mobile-menu");
 
     // accessing CSS for nav.mobile-menu
-    let navigationStyle = navigation.style;
+    var navigationStyle = navigation.style;
 
-    mobileMenuToggle.onclick = () => {
+    mobileMenuToggle.onclick = function () {
 
-        // // Add class
-        // navigation.className = 'open';
+        // Add class
+        navigation.className = 'open';
 
-        // // Add transform styling
-        // navigationStyle.transform = 'translateX(0)';
+        // Add transform styling
+        navigationStyle.transform = 'translateX(0)';
 
         console.log('click!!!!!!');
     };
