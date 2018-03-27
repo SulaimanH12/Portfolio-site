@@ -190,6 +190,13 @@ nav.mobile-menu {
     }
 }
 
+.text-copyright {
+    text-align: center;
+    padding: 10px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
 // Media query for mobile nav to change
 @media screen and (min-width: 700px) {
     nav.mobile-menu, 
