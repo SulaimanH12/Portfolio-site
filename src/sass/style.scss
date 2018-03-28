@@ -50,6 +50,7 @@ nav.mobile-menu {
         line-height: 3;
         padding: 2em;
         font-size: 24px;
+        text-align: center;
 
         li {
             font-weight: 300;
@@ -274,7 +275,7 @@ nav.mobile-menu {
 }
 
 // Media query for mobile nav to change
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 670px) {
     nav.mobile-menu, 
     span.mobile-menu-toggle { 
         visibility: hidden;
@@ -304,7 +305,42 @@ nav.mobile-menu {
 }
 
 @media screen and (min-width: 525px){
+    .portfolio-title-container {
+        padding-top: 65px;
+        padding-bottom: 30px;
+    }
+    .case-study-1 img {
+        width: 60%;
+    }
+    .case-study-2 img {
+    width: 55%;
+    }
+    .case-study-text-container {
+        font-size: 18px;
+    }
     .find-out {
         display: block;
+        font-weight: 300;
+        font-size: 19px;
+        padding: 8px 58px;
+    }
+
+    .contact-title-container {
+        padding: 0;
+        padding-bottom: 15px;
+    }
+
+    .social-icons {
+        padding: 0 3em 1em 3em;
+    }
+
+    .twitter-icon, .behance-icon {
+        width: 55%;
+    }
+    .linkedin-icon, .github-icon {
+        width: 35%;
+    }
+    .text-copyright {
+        font-size: 18px;
     }
 }
