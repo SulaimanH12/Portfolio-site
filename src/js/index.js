@@ -1,23 +1,23 @@
-var openMobileMenu = function () {
-    // .mobile-menu-toggle
-    var mobileMenuToggle = document.getElementsByClassName("mobile-menu-toggle");
+function toggleMenu() {
+    var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
 
-    // nav.mobile-menu
-    var navigation = document.getElementsByClassName("mobile-menu");
+    // if is menuBox displayed, hide it
+    if (mobileMenu.style.transform == "translateX(0%)") {
+        mobileMenu.style.transform = "translateX(100%)";
+    } else {
+        mobileMenu.style.transform = "translateX(0%)";
+        console.log('close meee');
+    }
+}
 
-    // accessing CSS for nav.mobile-menu
-    var navigationStyle = navigation.style;
+// function closeMenu() {
+//     var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
 
-    mobileMenuToggle.onclick = function () {
-
-        // Add class
-        navigation.className = 'open';
-
-        // Add transform styling
-        navigationStyle.transform = 'translateX(0)';
-
-        console.log('click!!!!!!');
-    };
-};
-
-openMobileMenu();
+//     // if is menuBox displayed, hide it
+//     if (mobileMenu.style.transform == "translateX(100%)") {
+//         mobileMenu.style.transform = "translateX(0%)";
+//     } else {
+//         mobileMenu.style.transform = "translateX(100%)";
+//         console.log('close meee');
+//     }
+// }
