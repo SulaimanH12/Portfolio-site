@@ -137,11 +137,11 @@ nav.mobile-menu {
 // Portfolio 
 #portfolio {
     background-color: #f6f6f6;
-    box-shadow: 2px 2px 3px 3px #f6f6f6;
+    clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
 }
 
 .portfolio-title-container {
-    padding: 15px 30px;
+    padding: 2em 30px;
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -151,7 +151,7 @@ nav.mobile-menu {
 }
 
 .case-study-container {
-    padding: 2em 0;
+    padding: 1.5em 0;
     text-align: center;
 }
 
@@ -235,6 +235,15 @@ nav.mobile-menu {
         position: absolute;
         top: 0;
         right: 0;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 525px) {
+    .twitter-icon, .behance-icon {
+        width: 60%;
+    }
+    .linkedin-icon, .github-icon {
+        width: 40%;
     }
 }
 
