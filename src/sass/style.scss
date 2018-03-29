@@ -1,4 +1,5 @@
 @import "global.scss";
+@import "media-queries.scss";
 
 // Mobile Nav
 .nav-top {
@@ -274,73 +275,3 @@ nav.mobile-menu {
     margin: 0 auto;
 }
 
-// Media query for mobile nav to change
-@media screen and (min-width: 670px) {
-    nav.mobile-menu, 
-    span.mobile-menu-toggle { 
-        visibility: hidden;
-    }
-    .nav-top {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-
-@media screen and (min-width: 420px) and (max-width: 525px) {
-    .portfolio-title-container {
-        padding: 3em 30px;
-    }
-    .case-study-container {
-        padding-top: 0.5em;
-        padding-bottom: 3em;
-    }
-    .twitter-icon, .behance-icon {
-        width: 60%;
-    }
-    .linkedin-icon, .github-icon {
-        width: 40%;
-    }
-}
-
-@media screen and (min-width: 525px){
-    .portfolio-title-container {
-        padding-top: 65px;
-        padding-bottom: 30px;
-    }
-    .case-study-1 img {
-        width: 60%;
-    }
-    .case-study-2 img {
-    width: 55%;
-    }
-    .case-study-text-container {
-        font-size: 18px;
-    }
-    .find-out {
-        display: block;
-        font-weight: 300;
-        font-size: 19px;
-        padding: 8px 58px;
-    }
-
-    .contact-title-container {
-        padding: 0;
-        padding-bottom: 15px;
-    }
-
-    .social-icons {
-        padding: 0 3em 1em 3em;
-    }
-
-    .twitter-icon, .behance-icon {
-        width: 55%;
-    }
-    .linkedin-icon, .github-icon {
-        width: 35%;
-    }
-    .text-copyright {
-        font-size: 18px;
-    }
-}
