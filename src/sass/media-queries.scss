@@ -1,4 +1,9 @@
 @media screen and (min-width: 420px) and (max-width: 525px) {
+
+    ///
+       // Portfolio
+    ///
+
     .portfolio-title-container {
         padding: 3em 30px;
     }
@@ -6,18 +11,34 @@
         padding-top: 0.5em;
         padding-bottom: 3em;
     }
-    .twitter-icon, .behance-icon {
+
+    /// 
+        // Footer
+    ///
+
+    ul.social-icons {
+        padding: 0 2em 1em 2em;
+    }
+    
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
         width: 60%;
     }
-    .linkedin-icon, .github-icon {
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
         width: 40%;
     }
 }
 
-
 @media screen and (min-width: 525px){
-    .portfolio-title-container {
-        padding-top: 65px;
+
+    ///
+       // Portfolio
+    ///
+
+    #portfolio > .container > .portfolio-title-container {
+        padding-top: 70px;
         padding-bottom: 30px;
     }
     .case-study-1 img {
@@ -29,7 +50,17 @@
     .case-study-text-container {
         font-size: 18px;
     }
-    .find-out {
+
+    #portfolio > .container > .case-study-container > .case-study-4 > .case-study-text-container > p:last-child {
+        padding-bottom: 25px;
+    }
+
+    /// 
+        // Footer
+    ///
+
+
+    footer > .container > .social-icons-section > h3.find-out {
         display: block;
         font-weight: 300;
         font-size: 19px;
@@ -45,10 +76,10 @@
         padding: 0 3em 1em 3em;
     }
 
-    .twitter-icon, .behance-icon {
+    .social-icons > li > a .twitter-icon, .behance-icon {
         width: 50%;
     }
-    .linkedin-icon, .github-icon {
+    .social-icons > li > a .linkedin-icon, .github-icon {
         width: 35%;
     }
     .text-copyright {
@@ -56,14 +87,82 @@
     }
 }
 
+@media screen and (min-width: 525px) and (max-width: 670px) {
 
+    /// 
+        // Footer
+    ///
+
+
+    ul.social-icons {
+        padding: 0 2em 1em 3em;
+    }
+
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 45%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 35%;
+    }
+}
 
 @media screen and (min-width: 670px) and (max-width: 768px) {
-    nav.mobile-menu, 
-    span.mobile-menu-toggle { 
+    
+    ///
+       // Portfolio
+    ///
+
+    #portfolio > .container > .case-study-container > .case-study-1 > img {
+        width: 55%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-2 > img {
+        width: 50%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-3 > img {
+        width: 40%;
+    }
+
+    /// 
+        // Footer
+    ///
+
+
+    footer > .container > .social-icons-section > h3.find-out {
+        display: block;
+        font-weight: 300;
+        font-size: 20px;
+        padding: 10px 88px;
+    }
+
+    ul.social-icons {
+        padding: 0 4em 1em 5em;
+    }
+
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 40%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    
+    ///
+        // Navbar
+    ///
+
+    header > nav.mobile-menu, 
+    header > span.mobile-menu-toggle { 
         visibility: hidden;
     }
-    .nav-top {
+    nav.nav-top {
         display: block;
         position: absolute;
         top: 0;
@@ -80,3 +179,152 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    ///
+        // Navbar
+    ///
+    header > .nav-top > .container > .navigation {
+        font-size: 18px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /// 
+        // Landing page
+    ///
+    #home > .container > .landing {
+        background-position-y: 0;
+    }
+
+    /// 
+        // About Me
+    ///
+
+    #about > .container > .text-container {
+        padding: 0 80px;
+    }
+
+    ///
+       // Portfolio
+    ///
+
+    #portfolio > .container > .case-study-container > .case-study-1 > img {
+        width: 50%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-2 > img {
+        width: 40%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-3 > img {
+        width: 40%;
+    }
+
+    /// 
+        // Footer
+    ///
+
+    footer > .container > .social-icons-section > h3.find-out {
+        padding: 8px 92px;
+    }
+
+    ul.social-icons {
+        padding: 0 4em 1em 5em;
+    }
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 35%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 25%;
+    }
+}
+
+// Need to change contact section from this break point
+@media screen and (min-width: 860px) {}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    ///
+        // Navbar
+    ///
+
+    header > .nav-top > .container > .navigation {
+        font-size: 19px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+
+    /// 
+        // Landing page
+    ///
+
+    #home > .container > .landing {
+        background-position-y: 0;
+    }
+
+    ///
+        // About Me
+    ///
+
+    #about > .container > .text-container {
+        padding: 0 95px;
+    }
+
+    /// 
+        // Portfolio
+    /// 
+
+    #portfolio > .container > .case-study-container > .case-study-1 > img {
+        width: 50%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-2 > img {
+        width: 35%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-3 > img {
+        width: 40%;
+    }
+
+    #portfolio > .container > .case-study-container> .holder > .case-study-text-container {
+        font-size: 19px;
+    }
+
+    /// 
+        // Footer
+    ///
+
+    footer>.container>.social-icons-section>h3.find-out {
+        padding: 8px 126px;
+    }
+
+    ul.social-icons {
+        padding: 0 6em 1em 7em;
+    }
+
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 30%;
+    }
+    
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 20%;
+    }
+}
+
+// Editing the portfolio section sizing in this break point needed
+@media screen and (min-width: 1250px) and (max-width: 1440px) {}
+
+@media screen and (min-width: 1360px) and (max-width: 1440px) {
+    
+    ///
+        // About Me
+    ///
+
+    #about > .container > .text-container {
+        padding: 0 135px;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
