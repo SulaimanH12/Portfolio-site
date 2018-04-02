@@ -385,3 +385,63 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    /// 
+        // Navbar
+    ///
+
+    .nav-top {
+        width: 40%;
+        .navigation {
+            font-size: 19px;
+            padding-top: 25px;
+            padding-right: 50px;
+        }
+    }
+
+    ///
+        // Landing page
+    ///
+
+    #home > .container > .landing {
+        height: 75vh;
+        background-position-y: 0;
+        .landing-text-container {
+            padding: 10.5em 0;
+        }
+    }
+
+    /// 
+        // About me
+    ///
+
+    #about > .container > .text-container {
+        padding: 0 50px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    ///
+        // Portfolio
+    ///
+
+    #portfolio > .container > .portfolio-title-container {
+        padding-top: 100px;
+    }
+
+    #portfolio > .container > .case-study-container > .case-study-1 > img {
+        width: 35%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-2 > img {
+        width: 25%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-3 > img {
+        width: 25%;
+    }
+
+    #portfolio > .container > .case-study-container > .case-study-4 > 
+    .case-study-text-container > p:last-child {
+        padding-bottom: 30px;
+    }
+}
