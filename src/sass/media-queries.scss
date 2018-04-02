@@ -241,7 +241,19 @@
 }
 
 // Need to change contact section from this break point
-@media screen and (min-width: 860px) {}
+@media screen and (min-width: 860px) {
+    #contact > .container > .copyright-holder {
+        position: relative;
+        .text-copyright {
+            position: absolute;
+            right: 35px;
+            bottom: 35px;
+            margin: 0;
+            width: initial;
+            padding: 0;
+        }
+    }
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 
