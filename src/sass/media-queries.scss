@@ -246,12 +246,55 @@
         position: relative;
         .text-copyright {
             position: absolute;
-            right: 35px;
+            right: 75px;
             bottom: 35px;
             margin: 0;
             width: initial;
             padding: 0;
         }
+    }
+
+    ul.social-icons {
+        padding: 0px 5em 1em 5em;
+    }
+
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 50%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 40%;
+    }
+
+    ul.social-icons > li:nth-child(3), ul.social-icons > li:nth-child(4) {
+        margin-top: 4px;
+    }
+
+    #contact > .container > .social-icons-section > .social-icons-container {
+        width: 55%;
+    }
+
+    footer > .container > .social-icons-section > h3.find-out {
+        padding: 8px 86px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 40%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 30%;
+    }
+
+    #contact > .container > .copyright-holder .text-copyright {
+        right: 100px;
     }
 }
 
@@ -289,13 +332,13 @@
     /// 
 
     #portfolio > .container > .case-study-container > .case-study-1 > img {
-        width: 50%;
+        width: 40%;
     }
     #portfolio > .container > .case-study-container > .case-study-2 > img {
         width: 35%;
     }
     #portfolio > .container > .case-study-container > .case-study-3 > img {
-        width: 40%;
+        width: 35%;
     }
 
     #portfolio > .container > .case-study-container> .holder > .case-study-text-container {
@@ -307,22 +350,24 @@
     ///
 
     footer>.container>.social-icons-section>h3.find-out {
-        padding: 8px 126px;
+        padding: 8px 88px;
     }
+}
 
-    ul.social-icons {
-        padding: 0 6em 1em 7em;
-    }
-
+@media screen and (min-width: 1170px) and (max-width: 1360px) {
     ul.social-icons>li>a img.twitter-icon,
     ul.social-icons>li>a img.behance-icon {
-        width: 30%;
+        width: 45%;
     }
-    
+
     ul.social-icons>li>a img.linkedin-icon,
     ul.social-icons>li>a img.github-icon {
-        width: 20%;
+        width: 35%;
     }
+    #contact > .container > .copyright-holder .text-copyright {
+        right: 100px;
+    }
+
 }
 
 // Editing the portfolio section sizing in this break point needed
