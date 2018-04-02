@@ -240,8 +240,12 @@
     }
 }
 
-// Need to change contact section from this break point
+// Contact section change from this breakpoint
 @media screen and (min-width: 860px) {
+    
+    ///
+        // Copyright text
+    ///
     #contact > .container > .copyright-holder {
         position: relative;
         .text-copyright {
@@ -253,6 +257,10 @@
             padding: 0;
         }
     }
+
+    ///
+        // Social icons contact
+    ///
 
     ul.social-icons {
         padding: 0px 5em 1em 5em;
@@ -276,6 +284,10 @@
         width: 55%;
     }
 
+    ///
+        // Footer
+    ///
+
     footer > .container > .social-icons-section > h3.find-out {
         padding: 8px 86px;
         font-size: 20px;
@@ -283,6 +295,10 @@
 }
 
 @media screen and (min-width: 1360px) {
+    ///
+        // Social icons contact
+    ///
+
     ul.social-icons>li>a img.twitter-icon,
     ul.social-icons>li>a img.behance-icon {
         width: 40%;
@@ -355,6 +371,9 @@
 }
 
 @media screen and (min-width: 1170px) and (max-width: 1360px) {
+    ///
+        // Social icons contact
+    ///
     ul.social-icons>li>a img.twitter-icon,
     ul.social-icons>li>a img.behance-icon {
         width: 45%;
@@ -387,7 +406,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    /// 
+    ///
         // Navbar
     ///
 
@@ -412,7 +431,7 @@
         }
     }
 
-    /// 
+    ///
         // About me
     ///
 
