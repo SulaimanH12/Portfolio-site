@@ -151,6 +151,9 @@
         width: 30%;
     }
 }
+///
+    // Navbar change to desktop nav
+///
 
 @media screen and (min-width: 670px) {
     
@@ -241,7 +244,7 @@
 }
 
 // Contact section change from this breakpoint
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
     
     ///
         // Copyright text
