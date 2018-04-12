@@ -494,7 +494,54 @@
         font-size: 35px;
     }
 
-        #about > .container > .text-container {
+    ///
+        // About
+    ///
+
+    #about > .container > .title > .section-heading {
+        font-size: 27px;
+    }
+
+    #about > .container > .text-container {
         width: 60%;
+    }
+
+    /// 
+        // Portfolio
+    ///
+
+    #portfolio > .container > .portfolio-title-container > h2 {
+        font-size: 27px;
+    }
+    #portfolio > .container > .case-study-container > .case-study-1 > img {
+        width: 27%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-2 > img {
+        width: 20%;
+    }
+    #portfolio > .container > .case-study-container > .case-study-3 > img {
+        width: 20%;
+    }
+
+    ///
+        // Footer
+    ///
+
+    footer>.container>.social-icons-section>h3.find-out {
+        padding: 8px 300px;
+    }
+
+    ul.social-icons>li>a img.twitter-icon,
+    ul.social-icons>li>a img.behance-icon {
+        width: 30%;
+    }
+
+    ul.social-icons>li>a img.linkedin-icon,
+    ul.social-icons>li>a img.github-icon {
+        width: 20%;
+    }
+
+    #contact>.container>.copyright-holder .text-copyright {
+        right: 250px;
     }
 }
