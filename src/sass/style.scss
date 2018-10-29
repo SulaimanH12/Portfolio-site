@@ -128,7 +128,6 @@ nav.mobile-menu {
     background: url(../img/landing.jpg);
     height: 85vh;
     background-position-y: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); // Skew effect
 }
 
 .landing-text-container {
@@ -176,7 +175,6 @@ nav.mobile-menu {
 
 #portfolio {
     background-color: #f6f6f6;
-    clip-path: polygon(0 0,100% 5%,100% 100%,0 95%);
 }
 
 .portfolio-title-container {
