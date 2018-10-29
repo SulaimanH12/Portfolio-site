@@ -154,14 +154,14 @@ nav.mobile-menu {
 }
 
 .title {
-    padding: 7px 0;
+    padding: 10px 0;
 }
 
 .section-heading {
     font-weight: 400;
     width: 50%;
     margin: 0 auto;
-    padding: 5px 30px;
+    padding: 5px 10px;
     text-align: center;
 }
 
@@ -175,16 +175,6 @@ nav.mobile-menu {
 
 #portfolio {
     background-color: #f6f6f6;
-}
-
-.portfolio-title-container {
-    padding: 3em 30px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    h2 {
-        font-weight: 400;
-    }
 }
 
 .case-study-container {
@@ -223,17 +213,6 @@ nav.mobile-menu {
     // Footer
 ///
 
-.contact-title-container {
-    padding: 15px 30px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.contact-title {
-    font-weight: 400;
-}
-
 .find-out {
     display: none;
 }
@@ -241,7 +220,7 @@ nav.mobile-menu {
 .social-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 1em 1em 1em;
+    padding: 10px;
     li:nth-child(3), li:nth-child(4) {
         text-align: center;
         margin-top: 7px;
