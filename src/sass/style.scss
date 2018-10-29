@@ -1,9 +1,7 @@
 @import "global.scss";
 @import "media-queries.scss";
 
-///
-    // Mobile Nav
-///
+// Mobile Nav
 
 .nav-top {
     display: none; // Desktop and tablet nav menu set to not display until media queries
@@ -22,7 +20,7 @@ span.mobile-menu-toggle {
     display: inline-block;
     position: absolute;
     right: 5%;
-    top: 3%;
+    top: 4%;
     z-index: 1;
 }
 nav.mobile-menu {
@@ -70,30 +68,6 @@ nav.mobile-menu {
     }
 }
 
-.hover-underline {
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    cursor: pointer;
-    color: black;
-    &:after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background: #6bf;
-        transition: all 0.4s ease;
-    }
-    &:hover {
-        &:after {
-            width: 100%; 
-        }
-    }
-}
-
 .desktop-nav {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
@@ -118,9 +92,7 @@ nav.mobile-menu {
     }
 }
 
-///
-    // Landing page
-///
+// Landing page
 
 .landing  {
     text-align: center;
@@ -131,25 +103,28 @@ nav.mobile-menu {
 }
 
 .landing-text-container {
-    padding: 8em 0;
+    padding: 135px 0;
     h1, h2  {
         font-weight: 400;
         font-size: 33px;
     }
 }
 
-///
-    // About 
-///
+// About 
 
 .about-text {
     font-size: 18px;
     line-height: 1.7;
     a {
         color: inherit;
+
+        &:hover {
+            color: #6bf;
+            transition: all .2s;
+        }
     }
     &:last-child {
-        padding-bottom: 1.7em;
+        padding-bottom: 35px;
     }
 }
 
@@ -169,9 +144,7 @@ nav.mobile-menu {
     padding: 0 25px;
 }
 
-///
-    // Portfolio 
-///
+// Portfolio 
 
 #portfolio {
     background-color: #f6f6f6;
@@ -209,9 +182,12 @@ nav.mobile-menu {
     }
 }
 
-///
-    // Footer
-///
+.portfolio-hover:hover {
+    opacity: 0.7;
+    transition: all .2s;
+}
+
+// Footer
 
 .find-out {
     display: none;
@@ -245,9 +221,7 @@ nav.mobile-menu {
     }
 }
 
-.text-copyright {
+.copyright-container {
     text-align: center;
     padding: 10px 0;
-    width: 50%;
-    margin: 0 auto;
 }
