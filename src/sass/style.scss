@@ -190,8 +190,7 @@ nav.mobile-menu {
 // Footer
 
 footer > .container > .title {
-    padding: unset;
-    padding-top: 10px !important;
+   padding: 10px 0 0 0;
 }
 
 .find-out {
@@ -208,6 +207,10 @@ footer > .container > .title {
     li {
         font-size: 32px;
         padding: 0 15px;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
