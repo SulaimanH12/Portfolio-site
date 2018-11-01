@@ -1,23 +1,11 @@
-function toggleMenu() {
-    var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
+var menuToggle = document.getElementsByClassName("mobile-menu-toggle")[0];
+var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
+var closeMenu = document.getElementsByClassName("close-mobile-menu")[0];
 
-    // if is menuBox displayed, hide it
-    if (mobileMenu.style.transform == "translateX(0%)") {
-        mobileMenu.style.transform = "translateX(100%)";
-    } else {
-        mobileMenu.style.transform = "translateX(0%)";
-        console.log('close meee');
-    }
+menuToggle.onclick = function() {
+    mobileMenu.style.transform = "translateX(0%)";
+};
+
+closeMenu.onclick = function() {
+    mobileMenu.style.transform = "translateX(100%)";
 }
-
-// function closeMenu() {
-//     var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
-
-//     // if is menuBox displayed, hide it
-//     if (mobileMenu.style.transform == "translateX(100%)") {
-//         mobileMenu.style.transform = "translateX(0%)";
-//     } else {
-//         mobileMenu.style.transform = "translateX(100%)";
-//         console.log('close meee');
-//     }
-// }
