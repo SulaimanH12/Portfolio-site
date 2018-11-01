@@ -189,6 +189,11 @@ nav.mobile-menu {
 
 // Footer
 
+footer > .container > .title {
+    padding: unset;
+    padding-top: 10px !important;
+}
+
 .find-out {
     text-align: center;
     font-weight: 300;
@@ -196,32 +201,20 @@ nav.mobile-menu {
 }
 
 .social-icons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 10px;
-    li:nth-child(3), li:nth-child(4) {
-        text-align: center;
-        margin-top: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    
+    li {
+        font-size: 32px;
+        padding: 0 15px;
     }
 }
 
-.social-icons > li > a .twitter-icon,
-.social-icons > li > a .behance-icon {
-    width: 75%;
-    &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-}
-
-.social-icons > li > a .linkedin-icon,
-.social-icons > li > a .github-icon  {
-    width: 50%;
-    &:hover {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-}
+#twitter {color: #1DA1F2;}
+#behance {color: #1769ff;}
+#linkedin {color: #0077B5;}
+#github {color: black;}
 
 .copyright-container {
     text-align: center;
