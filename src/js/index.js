@@ -1,14 +1,17 @@
-var menuToggle = document.getElementsByClassName("mobile-menu-toggle")[0];
-var mobileMenu = document.getElementsByClassName("mobile-menu")[0];
-var closeMenu = document.getElementsByClassName("close-mobile-menu")[0];
+// Mobile Menu
+$(".mobile-menu-toggle").on('click', function () {
+    $("nav.mobile-menu")
+        .addClass("open")
+        .css("transform", "translateX(0)");
 
-menuToggle.onclick = function() {
-    mobileMenu.style.transform = "translateX(0%)";
-};
+});
 
-closeMenu.onclick = function() {
-    mobileMenu.style.transform = "translateX(100%)";
-}
+// Click off Mobile Menu
+$(".close-mobile-menu").on('click', function () {
+    $("nav.mobile-menu")
+        .removeClass("open")
+        .css("transform", "translateX(100%)");
+});
 
 // Scroll to  target given anchor with an id
 $("a[href^=\\#]").on('click', function (e) {
