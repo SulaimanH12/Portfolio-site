@@ -1,0 +1,91 @@
+
+@media screen and (min-width: 670px) {
+    
+    header > nav.mobile-menu, 
+    header > span.mobile-menu-toggle { 
+        visibility: hidden;
+    }
+    nav.nav-top {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        color: white;
+        width: 50%;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0;
+        font-size: 17px;
+    }
+
+    #about > .container > .text-container {
+        padding: 0 40px;
+    }
+
+    .case-study-1 {
+        img {
+            width: 55% !important;
+        }
+    }
+
+    .case-study-2 {
+        img {
+            width: 45% !important;
+        }
+    }
+
+    .case-study-3 {
+        img {
+            width: 45% !important;
+        }
+    }
+
+    .social-icons-container > .social-icons > li {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header > .nav-top > .container > .navigation {
+        font-size: 18px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    header > .nav-top > .container > .navigation {
+        font-size: 19px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .nav-top {
+        width: 40%;
+        .navigation {
+            font-size: 19px;
+            padding-top: 25px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+
+    header > .nav-top > .container > .navigation {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+}
